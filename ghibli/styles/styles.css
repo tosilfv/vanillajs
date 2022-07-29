@@ -1,0 +1,914 @@
+body {
+  background-color: black;
+  font-family: Spartan, 'Courier New', Courier, monospace;
+}
+
+caption {
+  caption-side: bottom;
+  font-style: italic;
+  padding-top: 1rem;
+  text-align: end;
+}
+
+footer .footerDate {
+  height: 10rem;
+}
+
+header {
+  height: 5rem;
+  justify-content: flex-end;
+}
+
+main {
+  height: 85%;
+}
+
+table {
+  background-color: rgba(185, 155, 56, 0.518);
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+tbody tr {
+  background-image: url(../images/goldleaf.png);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(185, 155, 56, 0.918);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+caption,
+td {
+  letter-spacing: 0.1rem;
+}
+
+td,
+th {
+  /* adds hyphens to word breaks */
+  hyphens: auto;
+  padding: 1rem;
+}
+
+tfoot,
+thead {
+  background: linear-gradient(
+    rgba(47, 3, 58, 0.94),
+    rgb(255, 255, 255),
+    rgba(47, 3, 58, 0.94),
+    rgba(47, 3, 58, 0.94)
+  );
+}
+
+tfoot th,
+thead th {
+  font-size: 1.2rem;
+}
+
+tfoot td,
+tfoot th,
+thead th {
+  border: 0.1rem solid rgb(0, 0, 0);
+  /* offset-x | offset-y | blur-radius | color */
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(85, 55, 56, 0.918);
+}
+
+.carousel {
+  height: 33rem;
+  position: relative;
+}
+
+.carouselArrowL svg {
+  width: 3.3125rem;
+}
+
+.carouselArrowR svg {
+  width: 3.5625rem;
+}
+
+.carouselDots {
+  fill: white;
+  top: 85%;
+}
+
+.carouselDots svg {
+  /* vertical | horizontal */
+  margin: 0 0.5rem;
+  width: 2.5rem;
+}
+
+.carouselDots svg:active {
+  transform: scale(0.95);
+}
+
+.carouselDots svg:hover {
+  /* property name | duration | easing function */
+  transition: opacity 150ms ease-in;
+}
+
+.carouselImgShow {
+  margin-left: 0;
+  /* property name | duration | easing function */
+  transition: all 300ms ease-out;
+}
+
+.carouselLeft {
+  margin-left: -250vw;
+}
+
+.carouselRight {
+  margin-left: 250vw;
+}
+
+.dotShow {
+  fill: red;
+}
+
+.headerData {
+  /* no underline */
+  text-decoration: 0;
+}
+
+.headerData:hover {
+  text-decoration: underline;
+}
+
+.headerLi {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.headerLi:nth-child(3) div span {
+  /* uncapitalize api address */
+  text-transform: lowercase;
+}
+
+.headerLi:nth-child(3) span {
+  /* add space to the right hand side of api headerData */
+  margin-right: 2rem;
+}
+
+.helperDivHeader,
+.helperDivSearch {
+  padding-top: 0.1rem;
+}
+
+.mainHeader {
+  font-size: 2.3rem;
+  letter-spacing: -0.2rem;
+  /* vertical | horizontal */
+  padding: 1rem 0;
+  word-spacing: 1rem;
+}
+
+.mainHeaderBorder {
+  border-left: solid 0.5rem rgba(0, 0, 0, 0);
+  border-right: solid 0.5rem rgba(0, 0, 0, 0);
+}
+
+.mainHeaderContainer {
+  margin-top: 3rem;
+}
+
+.mainSection {
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.movieBanner {
+  width: 100%;
+}
+
+.movieButton {
+  border: 0.3rem double white;
+}
+
+.posterCrumb .posterCrumbButton {
+  /* property name | duration | easing function */
+  transition: all 800ms ease-in-out;
+}
+
+.posterCrumb:hover .posterCrumbButton {
+  /* vertical | horizontal */
+  padding: 2rem 0;
+}
+
+.posterCrumbButton {
+  border: 0.3rem double rgba(185, 155, 56, 0.918);
+  padding: 0.4rem;
+  /* offset-x | offset-y | blur-radius | color | offset-x | offset-y | blur-radius | color */
+  text-shadow: 0.03em 0.03rem 0.1rem black, 1rem 1rem 1rem darkgrey;
+}
+
+.posterCrumbButton:active {
+  /* vertical | horizontal */
+  padding: 1.5rem 1rem;
+}
+
+.posterImg {
+  border: 1rem double rgba(185, 155, 56, 0.918);
+  /* top | right | bottom | left */
+  margin: 0 0 4rem 2rem;
+  padding: 4rem;
+  width: 25rem;
+}
+
+.posterImgScale {
+  border: 0;
+  object-fit: scale-down;
+}
+
+.posterMenu {
+  margin-bottom: 4rem;
+}
+
+.posterMenuPreview {
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 0.5rem 1.5rem 0.5rem rgba(47, 3, 58, 0.74);
+}
+
+.posterMenuView {
+  border: 1.3rem dotted white;
+  font-size: 1.3rem;
+}
+
+.posterMenuView:not(:active) {
+  animation-duration: 200ms;
+}
+
+.searchAnimeList option:hover {
+  background-color: lightgrey;
+}
+
+.searchBorder {
+  border-left: solid 0.5rem white;
+  border-right: solid 0.5rem white;
+}
+
+.searchButton {
+  width: 12rem;
+}
+
+.searchButton:active {
+  background-color: rgba(85, 55, 56, 0.918);
+  transform: scale(0.9);
+}
+
+.searchButton:not(:active) {
+  animation-name: shakeBig;
+}
+
+.searchButtons {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* top | right | bottom | left */
+  padding: 2rem 0 1rem 0;
+}
+
+.searchLabel {
+  font-size: 1.5rem;
+}
+
+.searchSection {
+  /* top | right | bottom | left */
+  padding: 0 2rem 14rem 2rem;
+}
+
+.tableBorder {
+  border-bottom: solid 0.5rem rgba(247, 203, 58, 0.94);
+  border-left: solid 0.5rem rgba(247, 203, 58, 0.94);
+  border-right: solid 0.5rem rgba(247, 203, 58, 0.94);
+  border-top: solid 0.5rem rgba(247, 203, 58, 0.94);
+}
+
+.tableSort {
+  padding-bottom: 4rem;
+}
+
+header,
+.footerDate {
+  background: linear-gradient(
+    rgba(247, 203, 58, 0.94),
+    rgba(247, 203, 58, 0.94),
+    rgb(255, 255, 255),
+    rgba(247, 203, 58, 0.94),
+    rgba(185, 155, 56, 0.918),
+    rgba(185, 155, 56, 0.918)
+  );
+}
+
+.aboutView,
+.contactView {
+  border: 1rem double rgb(185, 155, 56);
+  padding: 1.5rem;
+  right: 4%;
+  top: 8%;
+}
+
+.carouselArrowL,
+.carouselArrowR {
+  fill: none;
+  stroke: white;
+  stroke-width: 10;
+  width: 50%;
+}
+
+.carouselArrowL svg,
+.carouselArrowR svg {
+  height: 6.25rem;
+  top: 40%;
+}
+
+.carouselArrowL:hover,
+.carouselArrowR:hover {
+  /* property name | duration | easing function */
+  transition: opacity 200ms ease-in;
+}
+
+.carouselDots svg,
+.searchButton {
+  height: 2.5rem;
+}
+
+.footerDate,
+.headerData {
+  /* offset-x | offset-y | blur-radius | color | offset-x | offset-y | blur-radius | color */
+  text-shadow: 0.06em 0.13rem 0.15rem black, 1rem 1rem 1rem darkgrey;
+}
+
+.footerDate,
+.headerLi {
+  font-size: 1rem;
+}
+
+.loadingDiv,
+.searchLabel {
+  padding-bottom: 1rem;
+}
+
+.loadingLabel,
+.searchButton {
+  font-size: 0.7rem;
+}
+
+.mainHeaderBorder,
+.searchBorder {
+  border-bottom: solid 0.5rem white;
+  border-top: solid 0.5rem white;
+}
+
+.mainShow,
+.tableShow {
+  /* property name | duration | easing function */
+  transition: all 500ms ease-in;
+}
+
+.nextButton,
+.previousButton {
+  border: 0.3rem double rgba(85, 55, 56, 0.918);
+  color: rgba(85, 55, 56, 0.918);
+}
+
+.posterCrumbButton,
+.posterMenuPreview {
+  width: 20rem;
+}
+
+.posterCrumbButton,
+.posterMenuView:not(:hover) {
+  color: rgba(185, 155, 56, 0.918);
+}
+
+.posterCrumbButton,
+.searchButton {
+  border-radius: 2rem;
+  font-weight: 700;
+}
+
+.posterCrumbButton:active,
+.posterImg:active {
+  transform: scale(0.98);
+  /* property name | easing function */
+  transition: all ease-in;
+}
+
+.posterCrumbButton:not(:active),
+.posterMenuView:not(:active) {
+  animation-name: shakeSmall;
+}
+
+.posterCrumbButton:active,
+.searchButton:active {
+  z-index: 1;
+}
+
+.posterCrumbButton:not(:active),
+.searchButton:not(:active) {
+  animation-duration: 100ms;
+}
+
+.posterImg:hover,
+.searchButton:active {
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 0 0.2rem 0.2rem rgba(247, 203, 58, 0.74);
+}
+
+.posterImgScale,
+.posterMenuView {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  /* property name | duration | easing function */
+  transition: all 200ms ease-in-out;
+  z-index: 3;
+}
+
+.posterImgScale,
+.posterMenuView:not(:hover) {
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 0 3rem 3rem rgba(247, 203, 58, 0.74);
+}
+
+.searchBorder,
+.tableBorder {
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.searchButton:focus,
+.searchButton:hover {
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 0 0.3rem 0.3rem rgba(247, 203, 58, 0.74);
+}
+
+.searchHeader,
+.tableHeader {
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+table,
+.posterImgScale,
+.searchButtons {
+  width: 100%;
+}
+
+th,
+.posterCrumbButton:active,
+.searchButton {
+  letter-spacing: 0.2rem;
+}
+
+main,
+table,
+.carouselLeft,
+.carouselRight {
+  opacity: 0;
+}
+
+.aboutView,
+.carouselDots,
+.contactView {
+  z-index: 2;
+}
+
+.aboutView,
+.contactView,
+.posterMenuView {
+  line-height: 1.5;
+}
+
+.carousel,
+.posterImgScale,
+.posterMenuView {
+  overflow: hidden;
+}
+
+.carouselArrowL,
+.carouselArrowR,
+.carouselDots svg {
+  opacity: 0.3;
+}
+
+.carouselArrowL svg,
+.carouselArrowR svg,
+.carouselDots svg {
+  /* (offset-x | offset-y | blur-radius | color) */
+  filter: drop-shadow(0.1rem 0.2rem 0.1rem black);
+}
+
+.nextButton,
+.previousButton,
+.searchButton {
+  background-color: rgba(247, 203, 58, 0.74);
+}
+
+.posterCrumb:hover .posterCrumbButton,
+.posterCrumbButton:active,
+.posterMenuView {
+  background: linear-gradient(
+    rgba(47, 3, 58, 0.94),
+    rgb(255, 255, 255),
+    rgba(47, 3, 58, 0.94),
+    rgba(85, 55, 56, 0.918),
+    rgba(85, 55, 56, 0.918)
+  );
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 -0.5rem 1.5rem 0.5rem rgba(47, 3, 58, 0.74);
+}
+
+.posterImgScale,
+.posterMenuPreview,
+.posterSection {
+  padding: 0;
+}
+
+.searchBorder,
+.tableBorder,
+.tableSection {
+  padding: 2rem;
+}
+
+body,
+.posterMenuView,
+.searchForm,
+.searchSection {
+  flex-direction: column;
+}
+
+tbody tr,
+.carouselArrowL:hover,
+.carouselArrowR:hover,
+.carouselDots svg:hover {
+  opacity: 0.9;
+}
+
+.carouselArrowL,
+.carouselArrowR,
+.javascriptNote {
+  height: 100%;
+}
+
+.javascriptNoteHide,
+.posterMenuPreview {
+  height: 0;
+}
+
+.posterMenuPreviewShow {
+  height: 100%;
+}
+
+.carouselArrowL:active,
+.carouselArrowR:active,
+.posterImgScale:active,
+.posterMenuView:active {
+  transform: scale(0.99);
+}
+
+.carouselImgShow,
+.dotShow,
+.mainShow,
+.tableShow {
+  opacity: 1;
+}
+
+.carouselArrowL,
+.footerDate,
+.posterMenuView,
+.searchAnimeList {
+  left: 0;
+}
+
+.footerDate,
+.headerData,
+.searchButton:active,
+.searchLabel {
+  color: rgba(247, 203, 58, 0.74);
+}
+
+.headerLi:nth-child(3) span,
+.mainHeader,
+.posterMenuViewH2,
+.searchButton {
+  text-transform: uppercase;
+}
+
+.mainHeaderBorder,
+.searchBorder,
+.searchButtons,
+.tableBorder {
+  box-sizing: border-box;
+}
+
+th,
+td,
+.aboutView,
+.contactView,
+.posterMenuPreview,
+.posterMenuView {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.carouselArrowR,
+.carouselArrowR svg,
+.footerDate,
+.posterImgScale,
+.posterMenuView,
+.searchAnimeList {
+  right: 0;
+}
+
+tbody tr:nth-child(even),
+.aboutView,
+.contactView,
+.posterCrumbButton,
+.posterImg,
+.posterMenuPreview,
+.searchAnimeList option:nth-child(1) {
+  background-color: white;
+}
+
+.aboutView,
+.carousel,
+.contactView,
+.footerDate,
+.posterCrumbButton,
+.posterMenuPreview,
+.posterMenuView,
+.posterSection {
+  justify-content: center;
+}
+
+.aboutView,
+.carouselArrowL,
+.carouselArrowL svg,
+.carouselArrowR,
+.carouselArrowR svg,
+.carouselDots,
+.contactView,
+.searchAnimeList {
+  position: absolute;
+}
+
+header,
+.aboutView,
+.contactView,
+.footerDate,
+.posterImgScale,
+.posterMenuPreview,
+.posterMenuView,
+.searchForm,
+.searchSection {
+  align-items: center;
+}
+
+main,
+.aboutView,
+.contactView,
+.loadingDiv,
+.loadingProgress,
+.posterMenuPreview,
+.posterMenuView,
+.searchAnimeList {
+  visibility: hidden;
+}
+
+.aboutViewShow,
+.contactViewShow,
+.javascriptNote,
+.loadingDivShow,
+.loadingProgressShow,
+.mainShow,
+.posterMenuPreviewShow,
+.posterMenuViewShow,
+.searchAnimeListShow {
+  visibility: visible;
+}
+
+.javascriptNoteHide {
+  visibility: hidden;
+}
+
+.loadingLabel,
+.loadingProgress,
+.mainHeader,
+.posterCrumb:hover .posterCrumbButton,
+.posterCrumbButton:active,
+.posterMenuView,
+.searchHeader,
+.searchLabel,
+.tableHeader {
+  /* offset-x | offset-y | blur-radius | color | offset-x | offset-y | blur-radius | color */
+  text-shadow: 0.1rem 0.1rem 0.1rem black,
+    0.1rem 0.1rem 0.1rem rgba(247, 203, 58, 0.74);
+}
+
+header,
+.carouselArrowL,
+.carouselArrowR,
+.carouselDots,
+.carouselDots svg,
+.mainHeader,
+.posterCrumbButton,
+.posterImg,
+.posterImgScale,
+.posterMenuView {
+  user-select: none;
+}
+
+tbody td,
+.aboutView,
+.contactView,
+.javascriptNote,
+.mainHeaderContainer,
+.movieListTitle,
+.posterMenuPreview,
+.posterMenuView,
+.searchContainer,
+.sortTitle,
+.tableContainer {
+  text-align: center;
+}
+
+.footerDate,
+.headerLi,
+.javascriptNote span,
+.javascriptNote::first-letter,
+.listOfMovies,
+.listOfSort,
+.loadingLabel,
+.posterCrumbButton,
+.searchHeader,
+.searchLabel,
+.tableHeader {
+  text-transform: capitalize;
+}
+
+body,
+header,
+.aboutView,
+.carousel,
+.contactView,
+.footerDate,
+.posterCrumbButton,
+.posterImgScale,
+.posterMenuPreview,
+.posterMenuView,
+.posterSection,
+.searchButtons,
+.searchForm {
+  display: flex;
+}
+
+caption,
+thead,
+tfoot,
+.carouselImg,
+.javascriptNote,
+.loadingLabel,
+.loadingProgress,
+.mainHeader,
+.movieButton,
+.posterCrumb:hover .posterCrumbButton,
+.posterCrumbButton:active,
+.posterMenuView,
+.searchHeader,
+.tableHeader {
+  color: white;
+}
+
+.aboutView,
+.carouselArrowL,
+.carouselArrowR,
+.carouselDots,
+.contactView,
+.headerData,
+.posterCrumb:hover .posterCrumbButton,
+.posterCrumbButton:active,
+.posterImg,
+.posterImgScale,
+.posterImgScale:active,
+.posterMenuView,
+.searchButton:hover {
+  cursor: pointer;
+}
+
+@keyframes shakeBig {
+  from {
+    transform: skewY(5deg);
+  }
+  to {
+    transform: skewY(-5deg);
+  }
+}
+
+@keyframes shakeSmall {
+  from {
+    transform: skewY(1deg);
+  }
+  to {
+    transform: skewY(-1deg);
+  }
+}
+
+@media (max-width: 350px) {
+  caption {
+    letter-spacing: 0;
+    text-align: center;
+  }
+  footer .footerDate {
+    /* vertical | horizontal */
+    padding: 0 10%;
+  }
+  table,
+  tfoot th,
+  thead th {
+    font-size: 0.5rem;
+  }
+  .mainHeader {
+    font-size: 1rem;
+  }
+  .tableBorder {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+  .carouselDots svg,
+  .headerLi {
+    margin: 0;
+  }
+  table,
+  .posterCrumbButton,
+  .posterMenuPreview,
+  .searchButton {
+    width: 8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carouselDots {
+    top: 65%;
+  }
+  .posterImg {
+    width: 65vw;
+  }
+  .posterImgScale {
+    width: 100%;
+  }
+  .listOfSort,
+  #searchInput {
+    width: 8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  td,
+  th {
+    letter-spacing: 0;
+  }
+  .tableHeader {
+    /* top | horizontal | bottom */
+    padding: 2rem 0 0;
+  }
+  td,
+  th,
+  .tableSection {
+    padding: 0;
+  }
+  .searchBorder,
+  .tableBorder {
+    border: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .posterImg {
+    margin-left: 0;
+    padding: 0;
+  }
+  .searchSection {
+    display: flex;
+  }
+}
+
+@media (max-width: 1200px) {
+  .posterMenu {
+    display: flex;
+  }
+  .posterSection {
+    flex-wrap: wrap;
+  }
+  .posterMenu,
+  .posterSection {
+    justify-content: center;
+  }
+}

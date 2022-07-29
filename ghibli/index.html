@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Studio Ghibli Anime</title>
+  </head>
+  <body>
+    <header>
+      <nav class="headerNav">
+        <ul>
+          <li class="headerLi">
+            <a
+              class="headerData"
+              href="https://en.wikipedia.org/wiki/Studio_Ghibli"
+              target="_blank"
+            >
+              wikipedia
+            </a>
+          </li>
+          <li class="headerLi">
+            <span class="headerData" tabindex="0">about</span>
+            <div class="aboutView">
+              <p>v1.0 studio ghibli anime site project 2022</p>
+            </div>
+          </li>
+          <li class="headerLi">
+            <span class="headerData" tabindex="0">api</span>
+            <div class="contactView">
+              <p>credits: <span>https://ghibliapi.herokuapp.com</span></p>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="carousel"></div>
+      <section class="mainSection">
+        <div class="helperDivHeader">
+          <fieldset class="mainHeaderContainer">
+            <legend>
+              <h1 class="mainHeader mainHeaderBorder">studio ghibli anime</h1>
+            </legend>
+          </fieldset>
+        </div>
+        <section class="tableSection tableContainer">
+          <fieldset class="tableBorder">
+            <legend>
+              <h2 class="tableHeader">movies</h2>
+            </legend>
+            <fieldset class="tableSort">
+              <select class="listOfSort" name="listOfSort">
+                <option class="sortTitle">- sort movies by -</option>
+                <option value="director ascending">director ascending</option>
+                <option value="director descending">director descending</option>
+                <option value="release date ascending">
+                  release date ascending
+                </option>
+                <option value="release date descending">
+                  release date descending
+                </option>
+                <option value="running time ascending">
+                  running time ascending
+                </option>
+                <option value="running time descending">
+                  running time descending
+                </option>
+                <option value="title ascending">title ascending</option>
+                <option value="title descending">title descending</option>
+              </select>
+            </fieldset>
+            <table class="sortTable"></table>
+          </fieldset>
+        </section>
+        <section class="searchSection searchContainer">
+          <fieldset class="searchBorder">
+            <legend>
+              <h2 class="searchHeader searchHeaderBorder">details</h2>
+            </legend>
+            <form class="searchForm">
+              <label class="searchLabel" for="searchInput">movie</label>
+              <input
+                id="searchInput"
+                name="ghibliSearchQuery"
+                placeholder="search"
+                spellcheck="false"
+                type="search"
+              />
+            </form>
+            <div class="helperDivSearch">
+              <fieldset class="searchAnimeList"></fieldset>
+            </div>
+            <div class="searchButtons">
+              <button class="searchButton previousButton" type="submit">
+                previous movie
+              </button>
+              <button class="searchButton movieButton" type="submit">
+                open movie menu
+              </button>
+              <button class="searchButton nextButton" type="submit">
+                next movie
+              </button>
+            </div>
+            <div class="loadingDiv">
+              <label class="loadingLabel" for="progressBar"
+                >loading . . .</label
+              >
+              <progress
+                class="loadingProgress"
+                id="progressBar"
+                max="100"
+                value="100"
+              ></progress>
+            </div>
+            <section class="posterSection"></section>
+          </fieldset>
+        </section>
+      </section>
+    </main>
+    <p class="javascriptNote">
+      you need to enable <span>javaScript</span> to run this app.
+    </p>
+    <footer>
+      <div class="footerDate"></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
